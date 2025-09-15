@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+    position: fixed;      
+    top: 0;               
+    left: 0;
+    width: 100%;          
+    z-index: 1000;        
+   
+}
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f0 !important;
+    
+}
+/*Caberceta  **************************************************************************/
+
+/* Navbar personalizada */
+.navbar-donjose {
+  background-color: black; 
+  height: 7em;
+}
+
+/* Links blancos y hover oscuro */
+.navbar-donjose .nav-link {
+  color: #fff !important;
+  border-radius: .375rem;
+}
+.navbar-donjose .nav-link:hover,
+.navbar-donjose .nav-link:focus {
+  color: #fff !important;
+  background: #6b2833;
+}
+
+/* Ajustes de marca */
+.navbar-donjose .navbar-brand {
+  color: #fff;
+}
+.navbar-donjose .brand-sub {
+  font-size: .9rem;
+  opacity: .85;
+}
+
+.imagencabecera{
+  height: 100px;
+}
+
+/* Opcional: más “aire” en desktop */
+@media (min-width: 992px) {
+  .navbar-donjose .nav-link { padding: .5rem .75rem; }
+}
+
+@media (max-width: 320px) {
+  .imagencabecera{
+  height: 56px;
+}
+}
+
+/* Fondo negro para el menú colapsado (coincide con navbar-expand-lg) */
+@media (max-width: 991.98px) {
+  .navbar-donjose .navbar-collapse {
+    background: #000;
+    padding: .75rem 1rem;                 /* un poco de aire */
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-radius: .5rem;                  /* opcional */
+  }
+  .navbar-donjose .navbar-nav .nav-link {
+    padding: .75rem 1rem;                  /* más cómodo al tacto */
+  }
+}
+
+/*Main  **************************************************************************/
+
+.espaciomain{
+margin-top: 110px;
+height: auto;
+background-color: #f2f2f0;
+}
+
+ .espacios {
+   margin-left: 3%;
+   margin-right: 3%;
+   margin-top: 4%;
+}
+
+.cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 7em;
+    background-color: black;
+}
+
+.cabecera h1{
+    color: white;
+}
+
+.cabecera p{
+    color: white;
+}
+
+.cabecera a{
+    color: white;
+    text-decoration: none;
+    padding-right: 7px;
+}
+
+.cabeceramenu{
+    margin-left: 14%;
+}
+
+.imgfondo {
+    background-image: url("../img/plato.jfif"); 
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+     color: white;
+    padding: 100px 50px 0px 50px;             
+    min-height: 600px;            
+}
+
+.imgfondo p{
+ margin-top: 2%;
+ font-size: 20px;
+ color: white;
+}
+
+#Nosotros .espacios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Imagen */
+#Nosotros .nosotros-logo {
+  height: 200px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin-right: 0;
+}
+
+/* Texto */
+.nosotros{
+ margin-left: 2%;
+}
+
+#Nosotros .nosotros h2 {
+  margin: 0 0 8px;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-family: 'Old English Text MT', serif;
+}
+
+#Nosotros .nosotros p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+}
+
+@media (max-width: 720px) {
+  #Nosotros .espacios {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #Nosotros .nosotros-logo {
+    height: auto;
+    max-width: 75vw;
+    margin: 0;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 721px) {
+  #Nosotros .nosotros-logo {
+    height: 160px;
+  }
+}
+
+
+/*Pie de pagina **************************************************************************/
+
+.pie{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 12em;
+    background-color: black;
+}
+
+/*Eventos **************************************************************************/
+
+.eventos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7d7d7d; 
+    color: white;
+    padding: 40px 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .eventos-texto {
+    max-width: 400px;
+  }
+  .eventos-texto h2 {
+    margin-top: 0;
+    font-weight: bold;
+  }
+  .eventos-texto p {
+    line-height: 1.5;
+  }
+  .botones {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .botones a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 14px;
+    width: fit-content;
+  }
+  .botones a:hover {
+    background-color: white;
+    color: #7d7d7d;
+  }
+  .botones a .icono {
+    margin-right: 8px;
+    font-size: 16px;
+  }
+  .eventos-imagen img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+/*Ubicacion **************************************************************************/
+
+#Ubicacion {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.info {
+    background-color: #6b2833; 
+    color: white;
+    padding: 3%;
+  }
+  .info h1 {
+    font-family: 'Old English Text MT', serif;
+  }
+
+#Ubicacion .ubi {
+  display: grid;
+  grid-template-columns: 360px 1fr;  
+  align-items: stretch;
+}
+
+#Ubicacion .map-container {
+  width: 100%;
+  height: 460px; 
+}
+
+
+#Ubicacion .map-container iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;         
+  display: block;    
+}
+
+/* ---------- Breakpoints ---------- */
+
+
+@media (max-width: 992px) {
+  #Ubicacion .ubi {
+    grid-template-columns: 320px 1fr; 
+  }
+}
+
+@media (max-width: 768px) {
+  #Ubicacion .ubi {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+  #Ubicacion .map-container {
+    height: 360px; 
+  }
+}
+
+
+@media (max-width: 420px) {
+  #Ubicacion .map-container {
+    height: 300px;
+  }
+}
+
+/*Contactos **************************************************************************/
+
+.contacto {
+  padding-bottom: 10px;
+  /*background: #f5e9dc;*/
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #fff3e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #5a3921;
+  margin: 3%;
+}
+
+.card p{
+  margin: 3%;
+}
+
+.formulario {
+  background: #fff3e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.formulario label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  background: #a0522d;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #7a3e22;
+}
+
+/*Platos Destacados **************************************************************************/
+
+.titulo-platos {
+  text-align: center;
+  font-size: 28px;
+  color: #4a2f23;      
+  margin: 30px 0 20px;  
+  font-weight: bold;
+}
+
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 20px; /* espacio entre platos */
+  max-width: 1000px; 
+  margin: 0 auto; 
+  padding: 20px;
+}
+
+.plato {
+  text-align: center;
+}
+
+.plato img {
+  width: 100%;
+  height: 220px;          
+  object-fit: cover;      /* recorta la imagen sin deformar */
+  border-radius: 10px;    
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.plato p {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #4a2f23;  
+  font-size: 18px;
+}
+
+.extra-menu {
+  text-align: center;        
+  margin: 40px auto;         
+  padding: 20px;
+  border-radius: 10px;      
+  max-width: 700px;          
+}
+
+.extra-menu p {
+  font-size: 28px;
+  color: #4a2f23;
+}
+
+.extra-menu a {
+  font-weight: bold;
+  color: #a0522d;            
+  text-decoration: none;
+}
+
+.extra-menu a:hover {
+  color: #7a3e22;            
+}
+
+
+
+
+
+
