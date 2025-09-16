@@ -125,7 +125,7 @@ background-color: #f2f2f0;
     background-repeat: no-repeat; 
     background-attachment: fixed;
      color: white;
-    padding: 100px 50px 0px 50px;             
+    padding: 100px 50px 50px 50px;             
     min-height: 600px;            
 }
 
@@ -380,17 +380,19 @@ background-color: #f2f2f0;
   border-radius: 5px;
 }
 
-.btn {
-  background: #a0522d;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  .btn{
+  border: 2px solid #5a3921 !important;   
+  background-color: white !important;   
+  color: #5a3921 !important;               
+  padding: 0.5rem 1rem !important;        
+  border-radius: 6px !important;          
+  font-weight: bold !important;
+  transition: 0.3s ease !important;
 }
 
 .btn:hover {
-  background: #7a3e22;
+  background-color: #5a3921 !important;  
+  color: white !important;
 }
 
 /*Platos Destacados **************************************************************************/
@@ -403,33 +405,52 @@ background-color: #f2f2f0;
   font-weight: bold;
 }
 
-
 .galeria {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  gap: 20px; /* espacio entre platos */
-  max-width: 1000px; 
-  margin: 0 auto; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;            
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 20px;
+  justify-content: center; 
 }
 
 .plato {
   text-align: center;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+}
+
+.plato p{
+  color: #4a2f23;    
+  font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+  .plato {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .plato {
+    flex: 1 1 100%;
+    max-width: 500px;   
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .plato img {
+    height: 200px;      
+  }
 }
 
 .plato img {
   width: 100%;
-  height: 220px;          
-  object-fit: cover;      /* recorta la imagen sin deformar */
-  border-radius: 10px;    
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-.plato p {
-  margin-top: 8px;
-  font-weight: bold;
-  color: #4a2f23;  
-  font-size: 18px;
 }
 
 .extra-menu {
@@ -456,7 +477,33 @@ background-color: #f2f2f0;
 }
 
 
+/*Menu **************************************************************************/
 
+.my-4 {
+  margin-top: 7.9rem !important;
+      margin-bottom: 1.5rem !important;
+  }
 
+.pdf-wrap { 
+    height: 80vh;   /* antes 60vh */
+    width: 110vh;
+}  
 
+@media (max-width: 768px){
+    .pdf-wrap { 
+        height: 70vh;  /* antes 50vh */
+        width: auto;
+    }          
+}
+
+.btn-sm{
+  background-color: white !important;
+  color: black !important; 
+   border: 1px solid gray !important;
+}
+
+.btn-sm:hover{
+  background-color: gray !important;
+  color: white !important;  
+}
 

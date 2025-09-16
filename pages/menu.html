@@ -35,44 +35,31 @@
         </nav>
     </header>
 
-    <style>
-        .pdf-wrap { 
-            height: 60vh; 
-            width: 110vh;
-        }           
-        @media (max-width: 768px){
-            .pdf-wrap { 
-                height: 50vh; 
-                width: auto;
-            }          
-        }
-        .my-4 {
-            margin-top: 7.9rem !important;
-            margin-bottom: 1.5rem !important;
-        }
-    </style>
-   
     <body>   
        <main class="espaciomain">
-            <div class="container my-4">
-                <!-- Limita el ancho para que no se haga enorme -->
-                <div class="mx-auto" >
-                    <div class="pdf-wrap border rounded overflow-hidden shadow-sm">
-                    <iframe
-                        class="w-100 h-100"
-                        src="../img/Carta de comidas Don Juan.pdf#view=FitH&toolbar=0"
-                        style="border:0; width: 60%;"
-                        loading="lazy">
-                    </iframe>
-                    </div>
+            <section class="imgfondo" style="padding: 8% 0 0 0;">
+                <div class="container" style="padding-bottom: 26px; margin-bottom: 0;">
+                    
+                    <!-- Limita el ancho para que no se haga enorme -->
+                    <div class="mx-auto" >
+                        <div class="pdf-wrap border rounded overflow-hidden shadow-sm">
+                        <iframe
+                            class="w-100 h-100"
+                            src="../img/Carta de comidas Don Juan.pdf#view=FitH&toolbar=0"
+                            style="border:0; width: 60%;"
+                            loading="lazy">
+                        </iframe>
+                        </div>
 
-                    <!-- Botón opcional para abrirlo aparte -->
-                    <div class="text-end mt-2">
-                    <a class="btn btn-sm btn-outline-secondary"
-                        href="../img/Carta de comidas Don Juan.pdf" target="_blank">Abrir en pestaña nueva</a>
+                        <!-- Botón opcional para abrirlo aparte -->
+                        <div class="text-end mt-2">
+                        <a class="btn btn-sm btn-outline-secondary"
+                            href="../img/Carta de comidas Don Juan.pdf" target="_blank">Abrir en pestaña nueva</a>
+                        </div>
                     </div>
+                    
                 </div>
-            </div>
+            </section>
         </main>
         
     </body>
