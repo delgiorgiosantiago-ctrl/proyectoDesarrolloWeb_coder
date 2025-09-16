@@ -1,35 +1,33 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
     
 }
 
 header {
-    position: fixed;      
-    top: 0;               
-    left: 0;
-    width: 100%;          
-    z-index: 1000;        
+  position: fixed;      
+  top: 0;               
+  left: 0;
+  width: 100%;          
+  z-index: 1000;        
    
 }
 
 body {
     
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f0 !important;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f0 !important;
     
 }
-/*Caberceta  **************************************************************************/
+/*Cabecera  **************************************************************************/
 
-/* Navbar personalizada */
 .navbar-donjose {
   background-color: black; 
   height: 7em;
 }
 
-/* Links blancos y hover oscuro */
 .navbar-donjose .nav-link {
   color: #fff !important;
   border-radius: .375rem;
@@ -40,7 +38,6 @@ body {
   background: #6b2833;
 }
 
-/* Ajustes de marca */
 .navbar-donjose .navbar-brand {
   color: #fff;
 }
@@ -53,7 +50,6 @@ body {
   height: 100px;
 }
 
-/* Opcional: más “aire” en desktop */
 @media (min-width: 992px) {
   .navbar-donjose .nav-link { padding: .5rem .75rem; }
 }
@@ -64,69 +60,68 @@ body {
 }
 }
 
-/* Fondo negro para el menú colapsado (coincide con navbar-expand-lg) */
 @media (max-width: 991.98px) {
   .navbar-donjose .navbar-collapse {
     background: #000;
-    padding: .75rem 1rem;                 /* un poco de aire */
+    padding: .75rem 1rem;                 
     border-top: 1px solid rgba(255,255,255,.1);
-    border-radius: .5rem;                  /* opcional */
+    border-radius: .5rem;                
   }
   .navbar-donjose .navbar-nav .nav-link {
-    padding: .75rem 1rem;                  /* más cómodo al tacto */
+    padding: .75rem 1rem;                 
   }
 }
 
 /*Main  **************************************************************************/
 
 .espaciomain{
-margin-top: 110px;
-height: auto;
-background-color: #f2f2f0;
+  margin-top: 110px;
+  height: auto;
+  background-color: #f2f2f0;
 }
 
- .espacios {
-   margin-left: 3%;
-   margin-right: 3%;
-   margin-top: 4%;
+.espacios {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 4%;
 }
 
 .cabecera{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 7em;
-    background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 7em;
+  background-color: black;
 }
 
 .cabecera h1{
-    color: white;
+  color: white;
 }
 
 .cabecera p{
-    color: white;
+  color: white;
 }
 
 .cabecera a{
-    color: white;
-    text-decoration: none;
-    padding-right: 7px;
+  color: white;
+  text-decoration: none;
+  padding-right: 7px;
 }
 
 .cabeceramenu{
-    margin-left: 14%;
+  margin-left: 14%;
 }
 
 .imgfondo {
-    background-image: url("../img/plato.jfif"); 
-    background-size: cover;      
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
-     color: white;
-    padding: 100px 50px 50px 50px;             
-    min-height: 600px;            
+  background-image: url("../img/plato.jfif"); 
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  color: white;
+  padding: 100px 50px 50px 50px;             
+  min-height: 600px;            
 }
 
 .imgfondo p{
@@ -144,7 +139,6 @@ background-color: #f2f2f0;
   padding: 16px;
 }
 
-/* Imagen */
 #Nosotros .nosotros-logo {
   height: 200px;
   width: auto;
@@ -153,7 +147,6 @@ background-color: #f2f2f0;
   margin-right: 0;
 }
 
-/* Texto */
 .nosotros{
  margin-left: 2%;
 }
@@ -287,16 +280,12 @@ background-color: #f2f2f0;
   height: 460px; 
 }
 
-
 #Ubicacion .map-container iframe {
   width: 100% !important;
   height: 100% !important;
   border: 0;         
   display: block;    
 }
-
-/* ---------- Breakpoints ---------- */
-
 
 @media (max-width: 992px) {
   #Ubicacion .ubi {
@@ -481,25 +470,25 @@ background-color: #f2f2f0;
 
 .my-4 {
   margin-top: 7.9rem !important;
-      margin-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
   }
 
 .pdf-wrap { 
-    height: 80vh;   /* antes 60vh */
-    width: 110vh;
+  height: 80vh;  
+  width: 110vh;
 }  
 
 @media (max-width: 768px){
-    .pdf-wrap { 
-        height: 70vh;  /* antes 50vh */
-        width: auto;
-    }          
+  .pdf-wrap { 
+    height: 70vh;  
+    width: auto;
+  }          
 }
 
 .btn-sm{
   background-color: white !important;
   color: black !important; 
-   border: 1px solid gray !important;
+  border: 1px solid gray !important;
 }
 
 .btn-sm:hover{
