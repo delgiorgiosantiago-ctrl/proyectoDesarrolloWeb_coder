@@ -1,0 +1,464 @@
+/* General **************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f0 !important;
+}
+
+/*Cabecera  **************************************************************************/
+@media (min-width: 992px) {
+  .navbar-donjose .nav-link {
+    padding: 0.5rem 0.75rem;
+  }
+}
+@media (max-width: 320px) {
+  .imagencabecera {
+    height: 56px !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar-donjose .navbar-collapse {
+    background: #000;
+    padding: 0.75rem 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+  }
+  .navbar-donjose .navbar-nav .nav-link {
+    padding: 0.75rem 1rem;
+  }
+}
+/*Main  **************************************************************************/
+@media (max-width: 720px) {
+  #Nosotros .espacios {
+    flex-direction: column;
+    text-align: center;
+  }
+  #Nosotros .nosotros-logo {
+    height: auto;
+    max-width: 75vw;
+    margin: 0;
+  }
+}
+@media (max-width: 992px) and (min-width: 721px) {
+  #Nosotros .nosotros-logo {
+    height: 160px;
+  }
+}
+/*Menu **************************************************************************/
+@media (max-width: 768px) {
+  .pdf-wrap {
+    height: 70vh !important;
+    width: auto !important;
+  }
+}
+/*Ubicacion **************************************************************************/
+@media (max-width: 992px) {
+  #Ubicacion .ubi {
+    grid-template-columns: 320px 1fr !important;
+  }
+}
+@media (max-width: 768px) {
+  #Ubicacion .ubi {
+    grid-template-columns: 1fr !important;
+    row-gap: 16px !important;
+  }
+  #Ubicacion .map-container {
+    height: 360px !important;
+  }
+}
+@media (max-width: 420px) {
+  #Ubicacion .map-container {
+    height: 300px !important;
+  }
+}
+/*Platos Destacados **************************************************************************/
+@media (max-width: 991.98px) {
+  .plato {
+    flex: 1 1 calc(50% - 20px) !important;
+    max-width: calc(50% - 20px) !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .plato {
+    flex: 1 1 100% !important;
+    max-width: 500px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .plato img {
+    height: 200px !important;
+  }
+}
+/*Pie de pagina **************************************************************************/
+.pie {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 12em;
+  background-color: black;
+}
+
+/*Cabecera  **************************************************************************/
+.navbar-donjose {
+  background-color: black;
+  height: 7em;
+}
+.navbar-donjose .nav-link {
+  color: #fff !important;
+  border-radius: 0.375rem;
+}
+.navbar-donjose .nav-link:hover {
+  color: #fff !important;
+  background: #6b2833;
+}
+.navbar-donjose .navbar-donjose .nav-link:focus {
+  color: #fff !important;
+  background: #6b2833;
+}
+.navbar-donjose .navbar-brand {
+  color: #fff;
+}
+.navbar-donjose .brand-sub {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.imagencabecera {
+  height: 100px;
+}
+
+/*Menu **************************************************************************/
+.my-4 {
+  margin-top: 7.9rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.pdf-wrap {
+  height: 80vh;
+  width: 110vh;
+}
+
+.btn-sm {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid gray !important;
+}
+.btn-sm:hover {
+  background-color: gray !important;
+  color: white !important;
+}
+
+/*Main  **************************************************************************/
+.espaciomain {
+  margin-top: 110px;
+  height: auto;
+  background-color: #f2f2f0;
+}
+
+.espacios {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 4%;
+}
+
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 7em;
+  background-color: black;
+}
+.cabecera h1 {
+  color: white;
+}
+.cabecera p {
+  color: white;
+}
+.cabecera a {
+  color: white;
+  text-decoration: none;
+  padding-right: 7px;
+}
+
+.cabeceramenu {
+  margin-left: 14%;
+}
+
+.imgfondo {
+  background-image: url("../img/plato.jfif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  padding: 100px 50px 50px 50px;
+  min-height: 600px;
+}
+.imgfondo p {
+  margin-top: 2%;
+  font-size: 20px;
+  color: white;
+}
+
+#Nosotros .espacios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+}
+#Nosotros .nosotros-logo {
+  height: 200px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin-right: 0;
+}
+#Nosotros .nosotros h2 {
+  margin: 0 0 8px;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-family: "Old English Text MT", serif;
+}
+#Nosotros .nosotros p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+}
+
+.nosotros {
+  margin-left: 2%;
+}
+
+/*Eventos **************************************************************************/
+.eventos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7d7d7d;
+  color: white;
+  padding: 40px 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.eventos-texto {
+  max-width: 400px;
+}
+.eventos-texto h2 {
+  margin-top: 0;
+  font-weight: bold;
+}
+.eventos-texto p {
+  line-height: 1.5;
+}
+
+.botones {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.botones a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 14px;
+  width: fit-content;
+}
+.botones a:hover {
+  background-color: white;
+  color: #7d7d7d;
+}
+.botones a .icono {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.eventos-imagen img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/*Contactos **************************************************************************/
+.contacto {
+  padding-bottom: 10px;
+  /*background: #f5e9dc;*/
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #fff3e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+.card h3 {
+  margin-top: 0;
+  color: #6b2833;
+  margin: 3%;
+}
+.card p {
+  margin: 3%;
+}
+
+.formulario {
+  background: #fff3e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+}
+.formulario label {
+  display: block;
+  margin: 10px 0 5px;
+}
+.formulario input, .formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  border: 2px solid #6b2833 !important;
+  background-color: white !important;
+  color: #6b2833 !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 6px !important;
+  font-weight: bold !important;
+  transition: 0.3s ease !important;
+}
+.btn:hover {
+  background-color: #6b2833 !important;
+  color: white !important;
+}
+
+/*Platos Destacados **************************************************************************/
+.titulo-platos {
+  text-align: center;
+  font-size: 28px;
+  color: #6b2833;
+  margin: 30px 0 20px;
+  font-weight: bold;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: center;
+}
+
+.plato {
+  text-align: center;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+}
+.plato img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.plato p {
+  color: #6b2833;
+  font-weight: bold;
+}
+
+.extra-menu {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+}
+.extra-menu p {
+  font-size: 28px;
+  color: #4a2f23;
+}
+.extra-menu a {
+  font-weight: bold;
+  color: #993546;
+  text-decoration: none;
+}
+.extra-menu a:hover {
+  color: #6b2833;
+}
+
+/*Ubicacion **************************************************************************/
+#Ubicacion {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.info {
+  background-color: #6b2833;
+  color: white;
+  padding: 3%;
+}
+.info h1 {
+  font-family: "Old English Text MT", serif;
+}
+
+#Ubicacion .ubi {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  align-items: stretch;
+}
+#Ubicacion .map-container {
+  width: 100%;
+  height: 460px;
+}
+#Ubicacion .map-container iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+  display: block;
+}
+
+/*# sourceMappingURL=estilos.css.map */

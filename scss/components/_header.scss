@@ -1,0 +1,56 @@
+/*Cabecera  **************************************************************************/
+
+.navbar-donjose {
+    background-color: black; 
+    height: 7em;
+
+    .nav-link {
+    color: #fff !important;
+    border-radius: .375rem;
+        &:hover{
+            color: #fff !important;
+            background: #6b2833;
+        }
+    }
+
+    .navbar-donjose .nav-link:focus {
+    color: #fff !important;
+    background: #6b2833;
+    }
+
+    .navbar-brand {
+    color: #fff;
+    }
+        
+    .brand-sub {
+    font-size: .9rem;
+    opacity: .85;
+    }
+
+}
+
+.imagencabecera{
+  height: 100px;
+}
+
+/*Menu **************************************************************************/
+
+.my-4 {
+  margin-top: 7.9rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+.pdf-wrap { 
+  height: 80vh;  
+  width: 110vh;
+}   
+
+.btn-sm{
+  background-color: white !important;
+  color: black !important; 
+  border: 1px solid gray !important;
+    &:hover{
+    background-color: gray !important;
+    color: white !important;  
+    }
+}

@@ -1,3 +1,4 @@
+/*
 * {
   margin: 0;
   padding: 0;
@@ -21,8 +22,10 @@ body {
   background-color: #f2f2f0 !important;
     
 }
-/*Cabecera  **************************************************************************/
+*/
 
+/*Cabecera  **************************************************************************/
+/*
 .navbar-donjose {
   background-color: black; 
   height: 7em;
@@ -71,9 +74,10 @@ body {
     padding: .75rem 1rem;                 
   }
 }
+*/
 
 /*Main  **************************************************************************/
-
+/*
 .espaciomain{
   margin-top: 110px;
   height: auto;
@@ -181,10 +185,10 @@ body {
     height: 160px;
   }
 }
-
+*/
 
 /*Pie de pagina **************************************************************************/
-
+/*
 .pie{
     display: flex;
     align-items: center;
@@ -193,9 +197,9 @@ body {
     height: 12em;
     background-color: black;
 }
-
+*/
 /*Eventos **************************************************************************/
-
+/*
 .eventos {
     display: flex;
     align-items: center;
@@ -249,9 +253,10 @@ body {
     width: 100%;
     border-radius: 8px;
   }
+*/
 
 /*Ubicacion **************************************************************************/
-
+/*
 #Ubicacion {
   max-width: 1100px;
   margin: 0 auto;
@@ -309,12 +314,12 @@ body {
     height: 300px;
   }
 }
+*/
 
 /*Contactos **************************************************************************/
-
+/*
 .contacto {
   padding-bottom: 10px;
-  /*background: #f5e9dc;*/
   text-align: center;
 }
 
@@ -383,9 +388,10 @@ body {
   background-color: #6b2833 !important;  
   color: white !important;
 }
+*/
 
 /*Platos Destacados **************************************************************************/
-
+/*
 .titulo-platos {
   text-align: center;
   font-size: 28px;
@@ -464,10 +470,10 @@ body {
 .extra-menu a:hover {
   color: #6b2833;            
 }
-
+*/
 
 /*Menu **************************************************************************/
-
+/*
 .my-4 {
   margin-top: 7.9rem !important;
     margin-bottom: 1.5rem !important;
@@ -476,7 +482,7 @@ body {
 .pdf-wrap { 
   height: 80vh;  
   width: 110vh;
-}  
+}   
 
 @media (max-width: 768px){
   .pdf-wrap { 
@@ -495,4 +501,4 @@ body {
   background-color: gray !important;
   color: white !important;  
 }
-
+*/
