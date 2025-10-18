@@ -1,20 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="./css/style.css">-->
-    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Don José Restaurante | Cocina tradicional y artesanal en La Plata</title>
+
+    <!-- Descripción -->
+    <meta name="description" content="Don José Restaurante combina tradición y pasión por la cocina artesanal. Disfrutá de los mejores platos en La Plata, con ambiente cálido y menús para todo evento.">
+
+    <!--Palabras clave -->
+    <meta name="keywords" content="restaurante, Don José, La Plata, comida artesanal, cocina tradicional, menú, eventos, gastronomía argentina">
+
+    <!--Autor-->
+    <meta name="author" content="Don José Restaurante">
+
+    <!--Icono del sitio -->
     <link rel="icon" type="image/png" href="./img/restaurantee.png">
+
+    <!--Canonical para evitar contenido duplicado -->
+    <link rel="canonical" href="https://tusitio.com/index.html">
+
+    <!-- Open Graph-->
+    <meta property="og:title" content="Don José Restaurante | Tradición y sabor en La Plata">
+    <meta property="og:description" content="Vení a Don José Restaurante y descubrí una experiencia gastronómica única. Cocina artesanal, eventos privados y los mejores sabores de La Plata.">
+    <meta property="og:image" content="https://tusitio.com/img/donjose-resto.jpg">
+    <meta property="og:url" content="https://tusitio.com/">
+    <meta property="og:type" content="restaurant">
+
+    <!--Twitter Card-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Don José Restaurante | Cocina artesanal en La Plata">
+    <meta name="twitter:description" content="Descubrí los sabores únicos de Don José. Cocina artesanal y ambiente cálido en el corazón de La Plata.">
+    <meta name="twitter:image" content="https://tusitio.com/img/donjose-resto.jpg">
+
+    <!--Bootstrap y CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Don Jose Restaurante</title>
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
+<body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark navbar-donjose">
             <div class="container-xl">
                 <a class="navbar-brand d-flex align-items-center" href="./index.html">
-                    <img class="imagencabecera" src="./img/logoDJ_blanco.png" alt="Don Jose"  class="me-2">
+                    <img class="imagencabecera" src="./img/logoDJ_blanco.png" alt="Logo Don José Restaurante" class="me-2">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navDonJose" aria-controls="navDonJose" aria-expanded="false" aria-label="Mostrar menú">
@@ -26,7 +55,7 @@
                         <li class="nav-item"><a class="nav-link" href="#Nosotros">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="./pages/ubicacion.html">Dónde estamos</a></li>
                         <li class="nav-item"><a class="nav-link" href="./pages/platos.html">Nuestros mejores platos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./pages/menu.html" >Menú</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/menu.html">Menú</a></li>
                         <li class="nav-item"><a class="nav-link" href="./pages/contactos.html">Contactos</a></li>
                     </ul>
                 </div>
@@ -34,56 +63,58 @@
         </nav> 
     </header>
 
-   
-    <body>   
-        <main class="espaciomain">
-            <section class="imgfondo">
-                <h1>Sabores que unen tradición y pasión</h1>
-                <p>En Don José Restaurante, cada visita es una invitación a disfrutar de la buena mesa. Descubrí el equilibrio perfecto entre cocina artesanal, aromas irresistibles y un ambiente pensado para compartir momentos únicos con quienes más querés.</p>
-            </section>
-            
-            <section id="Nosotros">
-                <div class="espacios">
-                    <img src="./img/logo-don-jose-restaurantes-nosotros.png" alt="Don Jose" class="nosotros-logo" width="auto" height="200">
-                    <div class="nosotros">
-                        <h2>Don Jose</h2>
-                        <p>Desde 1974, en Don Jose vivimos la pasión por la cocina. En el corazón de La Plata, combinamos tradición y creatividad para ofrecerte una experiencia inigualable, siempre con el mejor sabor y calidad.</p>
-                    </div>
+    <main class="espaciomain">
+        <section class="imgfondo">
+            <h1>Sabores que unen tradición y pasión</h1>
+            <p>En Don José Restaurante, cada visita es una invitación a disfrutar de la buena mesa. Descubrí el equilibrio perfecto entre cocina artesanal, aromas irresistibles y un ambiente pensado para compartir momentos únicos.</p>
+        </section>
+        
+        <section id="Nosotros">
+            <div class="espacios">
+                <img src="./img/logo-don-jose-restaurantes-nosotros.png" alt="Logo Don José Restaurante" class="nosotros-logo" width="auto" height="200">
+                <div class="nosotros">
+                    <h2>Don José Restaurante</h2>
+                    <p>Desde 1974, en Don José vivimos la pasión por la cocina. En el corazón de La Plata, combinamos tradición y creatividad para ofrecerte una experiencia gastronómica inigualable.</p>
                 </div>
-            </section><br><br>
+            </div>
+        </section>
 
-
-            <section class="eventos">
-                <div class="eventos-texto">
-                    <h2>Eventos</h2>
-                    <p>En Don Jose podés celebrar tu evento privado: recepciones, cumpleaños, casamientos y demás celebraciones con la mejor oferta gastronómica y ambiente cuidado. Contamos con salón privado y opciones de menú para que sólo te ocupes de disfrutar.</p>
-                    <div class="botones">
-                        <a href="https://wa.me/" target="_blank"><img style="margin-right: 8px;" src="./img/Whatsapp.png" alt="Whatsapp" width="auto" height="25">COTIZÁ TU SERVICIO</a> 
-                        <a href="./img/Carta de comidas Don Juan.pdf" target="_blank"> MENÚS DISPONIBLES </a>
-                    </div>
+        <section class="eventos">
+            <div class="eventos-texto">
+                <h2>Eventos y celebraciones</h2>
+                <p>En Don José podés celebrar tu evento privado: recepciones, cumpleaños, casamientos y más. Contamos con salón privado y opciones de menú para que sólo te ocupes de disfrutar.</p>
+                <div class="botones">
+                    <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+                        <img style="margin-right: 8px;" src="./img/Whatsapp.png" alt="Contacto WhatsApp Don José" height="25">COTIZÁ TU SERVICIO
+                    </a> 
+                    <a href="./img/Carta de comidas Don Juan.pdf" target="_blank" rel="noopener noreferrer">MENÚS DISPONIBLES</a>
                 </div>
-                <div class="eventos-imagen">
-                    <img src="./img/donjose-resto.jpg" alt="Don Jose" />
-                </div>
-            </section>                 
-        </main>     
-    </body>
+            </div>
+            <div class="eventos-imagen">
+                <img src="./img/donjose-resto.jpg" alt="Interior de Don José Restaurante en La Plata">
+            </div>
+        </section>                 
+    </main>     
 
     <footer>
-        <div>
-            <div class="pie">    
-                <a href="./index.html">
-                    <img src="./img/logo-djjj.png" alt="Don Jose" width="auto" height="100">
+        <div class="pie">    
+            <a href="./index.html">
+                <img src="./img/logo-djjj.png" alt="Logo Don José" height="100">
+            </a>
+            <div>
+                <a style="margin-right: 10px;" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="./img/facebook.png" alt="Facebook Don José" height="40">
                 </a>
-                <div>
-                    <a style="margin-right: 10px;" href="https://www.facebook.com" target="_blank"><img src="./img/facebook.png" alt="facebook" width="auto" height="40"></a>
-                    <a style="margin-right: 10px;" href="https://www.instagram.com" target="_blank"><img src="./img/instagram.png" alt="instagram" width="auto" height="40"></a>
-                    <a href="https://wa.me/" target="_blank"><img src="./img/Whatsapp.png" alt="Whatsapp" width="auto" height="40"></a> 
-                </div>
+                <a style="margin-right: 10px;" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="./img/instagram.png" alt="Instagram Don José" height="40">
+                </a>
+                <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+                    <img src="./img/Whatsapp.png" alt="WhatsApp Don José" height="40">
+                </a> 
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
-</html>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
